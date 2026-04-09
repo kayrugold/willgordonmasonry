@@ -1,27 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Oswald", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", ui-sans-serif, system-ui, sans-serif;
   
   --color-stone-50: #fafaf9;
   --color-stone-100: #f5f5f4;
   --color-stone-800: #292524;
   --color-stone-900: #1c1917;
+  --color-stone-950: #0c0a09;
   
-  --color-brick-500: #b94a3e;
-  --color-brick-600: #9a3b31;
-  --color-brick-700: #7a2e26;
+  --color-neon-500: #a3e635; /* Lime/Neon Green */
+  --color-neon-600: #84cc16;
+  
+  --color-gold-500: #d4af37;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-stone-50);
-  color: var(--color-stone-900);
+  background-color: var(--color-stone-950);
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+.text-3d {
+  text-shadow: 
+    0px 1px 0px #d4d4d4,
+    0px 2px 0px #c4c4c4,
+    0px 3px 0px #b4b4b4,
+    0px 4px 0px #a4a4a4,
+    0px 5px 0px #949494,
+    0px 6px 0px #848484,
+    0px 7px 0px #747474,
+    0px 8px 10px rgba(0, 0, 0, 0.5),
+    0px 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.text-3d-stone {
+  color: white;
+  text-shadow: 
+    0px 1px 0px #8a8a8a,
+    0px 2px 0px #7a7a7a,
+    0px 3px 0px #6a6a6a,
+    0px 4px 0px #5a5a5a,
+    0px 5px 0px #4a4a4a,
+    0px 6px 0px #3a3a3a,
+    0px 7px 0px #2a2a2a,
+    0px 8px 0px #1a1a1a,
+    0px 12px 15px rgba(0, 0, 0, 0.8),
+    0px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+.text-3d-sm {
+  text-shadow: 
+    0px 1px 0px #d4d4d4,
+    0px 2px 0px #a4a4a4,
+    0px 3px 0px #848484,
+    0px 4px 5px rgba(0, 0, 0, 0.5);
 }
